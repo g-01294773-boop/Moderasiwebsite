@@ -1,0 +1,6 @@
+{
+  "name": "Moderasi Penskoran App",
+  "description": "Borang digital untuk mengurus moderasi penskoran UASA dan menjana laporan PDF",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "murid": {
+      "title": "Murid",
+      "description": "Student data",
+      "type": "object",
+      "properties": {
+        "nama": { "type": "string" },
+        "id": { "type": "string" }
+      },
+      "required": ["nama", "id"]
+    },
+    "guru": {
+      "title": "Guru",
+      "description": "Teacher data",
+      "type": "object",
+      "properties": {
+        "nama": { "type": "string" },
+        "id": { "type": "string" }
+      },
+      "required": ["nama", "id"]
+    },
+    "rekod": {
+      "title": "Rekod",
+      "description": "Saved Moderasi Records",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "date": { "type": "string" },
+        "info": { "type": "object" },
+        "rows": { "type": "array" }
+      },
+      "required": ["id", "date", "info", "rows"]
+    }
+  },
+  "firestore": {
+    "murid": {
+      "schema": "murid",
+      "description": "List of students for Admin Data"
+    },
+    "guru": {
+      "schema": "guru",
+      "description": "List of teachers for Admin Data"
+    },
+    "rekod": {
+      "schema": "rekod",
+      "description": "Saved Borang records for all users"
+    }
+  }
+}
